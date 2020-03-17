@@ -60,10 +60,10 @@ class Game
   end
 
   def turn
-    until winner do
+    #until winner do
       current_player.move(@board)
-      binding.pry
-    end
+      #binding.pry
+    #end
 
   end
 
