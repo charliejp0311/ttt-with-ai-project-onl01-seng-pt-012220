@@ -53,20 +53,33 @@ class Game
 
   def winner
     if over? && @board.cells[@win_comb[0]] != " "
-      @board.cells[@win_comb[0]]
+      if draw?
+        puts "Cats, Game!"
+      elsif won?
+        @board.cells[@win_comb[0]]
+      end
     else
       nil
     end
   end
 
   def turn
+# <<<<<<< HEAD
       current_player.move(@board)
   end
 
   def play
     until over?
       turn
+      winner
     end
+# =======
+    # until winner do
+    #   current_player.move(@board)
+    # end
+
+    #binding.pry
+# >>>>>>> 9f40fb0d4f5856a23cd7d2fcca070c3815e4b190
   end
 
 end
