@@ -77,7 +77,7 @@ class Game
       current_player.move(@board)
     end
 
-    binding.pry
+    #binding.pry
 # >>>>>>> 9f40fb0d4f5856a23cd7d2fcca070c3815e4b190
   end
 
