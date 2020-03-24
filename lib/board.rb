@@ -27,11 +27,9 @@ class Board
   end
 
   def turn_count
-<<<<<<< HEAD
-    (@cells.select{|cell| cell == "X" || cell == "O"}.count)
-=======
+
     @cells.select{|cell| cell == "X" || cell == "O"}.count
->>>>>>> 9f40fb0d4f5856a23cd7d2fcca070c3815e4b190
+
   end
 
   def taken?(pos)
