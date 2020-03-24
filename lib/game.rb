@@ -60,21 +60,21 @@ class Game
   end
 
   def turn
-<<<<<<< HEAD
+# <<<<<<< HEAD
       current_player.move(@board)
   end
 
   def play
-    until over?
-      turn
-    end
-=======
+#     until over?
+#       turn
+#     end
+# =======
     until winner do
       current_player.move(@board)
     end
 
     binding.pry
->>>>>>> 9f40fb0d4f5856a23cd7d2fcca070c3815e4b190
+# >>>>>>> 9f40fb0d4f5856a23cd7d2fcca070c3815e4b190
   end
 
 end
