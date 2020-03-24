@@ -28,7 +28,7 @@ class Board
 
   def turn_count
 
-    @cells.select{|cell| cell == "X" || cell == "O"}.count
+    (@cells.select{|cell| cell == "X" || cell == "O"}.count)
 
   end
 
