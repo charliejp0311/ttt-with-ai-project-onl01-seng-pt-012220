@@ -69,7 +69,7 @@ class Game
   end
 
   def play
-    until over? && @board.cells[@win_comb[0]] != " "
+    until over?
       turn
       winner
     end
