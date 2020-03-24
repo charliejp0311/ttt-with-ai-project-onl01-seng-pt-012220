@@ -52,8 +52,12 @@ class Game
   end
 
   def winner
-    if over? && @board.cells[@win_comb[0]] != " "
-      @board.cells[@win_comb[0]]
+    if over? 
+      if draw?
+        puts "Cats, Game!"
+      elsif won? && @board.cells[@win_comb[0]] != " "
+        @board.cells[@win_comb[0]]
+      end
     else
       nil
     end
